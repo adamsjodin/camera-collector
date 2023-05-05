@@ -7,12 +7,12 @@ function ErrorPage() {
     function goToStartPage() {
         navigate("/")
     }
-    return ( 
+    return (
         <article className={style.errorPage}>
             <h1>Sorry, the page you're looking for does not exist</h1>
             <Button title="Go to start page" action={goToStartPage} />
         </article>
-     );
+    );
 }
 
 export default ErrorPage;

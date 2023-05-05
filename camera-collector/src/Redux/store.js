@@ -6,5 +6,5 @@ export const store = configureStore({
     reducer: {
         cameras: cameraReducers
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false})
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({ serializableCheck: false })
 })

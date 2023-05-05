@@ -10,14 +10,17 @@
     text-align: center;
     margin: 1rem 1rem 1rem;
     @include flexColumn(center);
+
     &__heading {
         @include flexRow(space-around);
         width: 100%;
     }
+
     &__img {
         width: 100%;
         border: 1px solid black;
     }
+
     &__form {
         display: flex;
         flex-direction: column;
@@ -27,6 +30,7 @@
     &__star {
         cursor: pointer;
     }
+
     &__starInput {
         display: none;
     }

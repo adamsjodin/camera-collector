@@ -10,7 +10,7 @@ function AddCameras() {
     const [addModel, setAddModel] = useState();
     const [addDesc, setAddDesc] = useState();
     const [addImg, setAddImg] = useState();
-    
+
     const dispatch = useDispatch()
     const brandRef = useRef()
     const modelRef = useRef()
@@ -20,11 +20,11 @@ function AddCameras() {
     const [newCameraId, setNewCameraId] = useState(0);
 
     const allCameras = useSelector(state => state.cameras.allCameras);
-    
+
     useEffect(() => {
-      setNewCameraId(allCameras.length + 1); 
+        setNewCameraId(allCameras.length + 1);
     }, [allCameras]);
-  
+
     function handleAddCamera(e) {
         e.preventDefault()
         const newCamera = {
@@ -41,7 +41,7 @@ function AddCameras() {
         imgRef.current.value = "";
     }
 
-    return ( 
+    return (
         <article>
             <Navbar />
             <h2>ADD CAMERA</h2>
@@ -54,10 +54,10 @@ function AddCameras() {
                 <input ref={descRef} onChange={(e) => setAddDesc(e.target.value)} type="text" name="desc" id="desc" />
                 <label htmlFor="img">Image</label>
                 <input ref={imgRef} onChange={(e) => setAddImg(e.target.value)} type="text" name="img" id="img" />
-                <Button action={handleAddCamera} title="Add Camera"/>
+                <Button action={handleAddCamera} title="Add Camera" />
             </form>
         </article>
-     );
+    );
 }
 
 export default AddCameras;

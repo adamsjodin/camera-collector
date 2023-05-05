@@ -36,14 +36,14 @@ function MyCameras() {
         <>
             <Navbar />
             <h2>My camera collection</h2>
-            
-{                myCameraCollection.length === 0 ?
-                    <section className={style.noCameras}>
-                        <h2>You have no cameras in your collection.</h2>
-                        <p>Would you like to add one?</p>
-                        <Button title="Add camera" action={addCamera} />
-                    </section> : 
-            
+
+            {myCameraCollection.length === 0 ?
+                <section className={style.noCameras}>
+                    <h2>You have no cameras in your collection.</h2>
+                    <p>Would you like to add one?</p>
+                    <Button title="Add camera" action={addCamera} />
+                </section> :
+
                 myCameraCollection &&
                 myCameraCollection.map((camera, i) => (
                     <section key={i} className={style.myCameraCollection}>
@@ -88,9 +88,7 @@ function MyCameras() {
                     </section>
                 ))
             }
-
         </>
-
     );
 }
 

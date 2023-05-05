@@ -24,7 +24,6 @@ function CameraInfo() {
         dispatch(addToMyCameras(singleCamera))
     }
 
-
     return (
         <main>
             <Navbar />
@@ -41,9 +40,9 @@ function CameraInfo() {
 
                 }
             </article>
-                <section className={style.cameraInfo__btn}>
-                    <Button action={handleAddToMyCameras} title="Add to My Cameras" />
-                </section>
+            <section className={style.cameraInfo__btn}>
+                <Button action={handleAddToMyCameras} title="Add to My Cameras" />
+            </section>
         </main>
     );
 }

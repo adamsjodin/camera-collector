@@ -32,7 +32,7 @@ function StartPage() {
         e.preventDefault()
         navigate("/addcameras")
     }
-    
+
 
     return (
         <>
@@ -43,8 +43,8 @@ function StartPage() {
                     {
                         searchCamera &&
                         <>
-                        <label htmlFor="search">SEARCH CAMERA:</label>
-                        <input onChange={(e) => handleSearch(e.target.value)} className={style.startPage__input} type="text" id="search" />
+                            <label htmlFor="search">SEARCH CAMERA:</label>
+                            <input onChange={(e) => handleSearch(e.target.value)} className={style.startPage__input} type="text" id="search" />
                         </>
                     }
                     {cameraNotFound && (

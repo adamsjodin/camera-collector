@@ -11,6 +11,7 @@ $marginOneRem: 1rem;
     justify-content: $direction;
     align-items: center;
 }
+
 @mixin flexRow($direction) {
     display: flex;
     justify-content: $direction;

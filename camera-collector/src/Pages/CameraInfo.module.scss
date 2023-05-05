@@ -6,10 +6,12 @@
     margin: 1rem 1rem 1rem;
     @include flexColumn(center);
     border: 1px solid black;
+
     h3 {
         font-weight: 400;
         margin: $marginOneRem;
     }
+
     p {
         font-weight: 300;
     }
@@ -25,6 +27,7 @@
         flex-grow: 1;
 
     }
+
     &__btn {
         bottom: 0;
         left: 0;

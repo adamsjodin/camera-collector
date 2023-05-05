@@ -9,16 +9,16 @@ body.activePopup {
     color: $PrimaryTextColor;
     box-shadow: $BoxShadow;
     @include flexRow(space-between);
-    
     position: relative;
     padding: 1rem;
 
-        h3 {
-            font-weight: 400;
-        }
-        img {
-            cursor: pointer;
-        }
+    h3 {
+        font-weight: 400;
+    }
+
+    img {
+        cursor: pointer;
+    }
 }
 
 .popup {
@@ -30,13 +30,15 @@ body.activePopup {
     height: 11rem;
     top: -2.1rem;
     margin: 6.25rem auto;
-    a:link { 
+
+    a:link {
         color: $PrimaryTextColor;
-        text-decoration: none; 
+        text-decoration: none;
     }
-    a:visited { 
+
+    a:visited {
         color: $PrimaryTextColor;
-        text-decoration: none; 
+        text-decoration: none;
     }
 
     @include flexColumn(center);

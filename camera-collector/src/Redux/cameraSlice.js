@@ -63,9 +63,9 @@ export const cameraSlice = createSlice({
             state.myCameras.push(action.payload);
         },
         removedFromMyCameras: (state, action) => {
-                const remove = state.myCameras.findIndex((camera) => camera.id === action.payload.id)
-                state.myCameras.splice(remove, 1)
-        }, 
+            const remove = state.myCameras.findIndex((camera) => camera.id === action.payload.id)
+            state.myCameras.splice(remove, 1)
+        },
         addCameraToAllCameras: (state, action) => {
             state.allCameras.push(action.payload)
         }
