@@ -1,0 +1,20 @@
+@import "../variables";
+
+.camerasContainer {
+    text-align: center;
+    margin: 0 1rem 1rem;
+    border: 1.5px solid black;
+
+    &__img {
+        width: 100%;
+        border-bottom: 1px solid black;
+
+    }
+
+    &__name {
+        padding: 0.5rem;
+        font-weight: 400;
+        margin: 0rem;
+    }
+
+}

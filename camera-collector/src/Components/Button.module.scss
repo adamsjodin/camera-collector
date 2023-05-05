@@ -1,0 +1,12 @@
+@import "../variables";
+
+.button {
+    margin: $marginOneRem;
+    background-color: $PrimaryBackground;
+    color: $PrimaryTextColor;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 300;
+    box-shadow: $BoxShadow;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+@import "../variables";
+
+body.activePopup {
+    overflow-y: hidden;
+}
+
+.navbar {
+    background-color: $PrimaryBackground;
+    color: $PrimaryTextColor;
+    box-shadow: $BoxShadow;
+    @include flexRow(space-between);
+    
+    position: relative;
+    padding: 1rem;
+
+        h3 {
+            font-weight: 400;
+        }
+        img {
+            cursor: pointer;
+        }
+}
+
+.popup {
+    background-color: $PrimaryBackground;
+    color: $PrimaryTextColor;
+    box-shadow: $BoxShadow;
+    position: fixed;
+    width: 10rem;
+    height: 11rem;
+    top: -2.1rem;
+    margin: 6.25rem auto;
+    a:link { 
+        color: $PrimaryTextColor;
+        text-decoration: none; 
+    }
+    a:visited { 
+        color: $PrimaryTextColor;
+        text-decoration: none; 
+    }
+
+    @include flexColumn(center);
+
+    &__flexBtn {
+        @include flexColumn(flex-end);
+    }
+
+    &__closebtn {
+        color: $PrimaryBackground;
+        background-color: $PrimaryTextColor;
+        box-shadow: $BoxShadow;
+        border: none;
+        margin-top: -0.5rem;
+        margin-left: 1.5rem;
+    }
+}

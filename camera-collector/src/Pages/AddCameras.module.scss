@@ -1,0 +1,16 @@
+@import "../variables";
+
+
+    .addCameras__form {
+        input {
+            width: 100%;
+            padding: 0.2rem;
+            margin: 0 $marginOneRem;
+            font-size: 1rem;
+        }
+        input:focus {
+            outline: none;
+        }
+    @include flexColumn(center);
+        margin: $marginOneRem;
+    }

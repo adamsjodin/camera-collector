@@ -1,0 +1,18 @@
+$PrimaryBackground: #02836E;
+$PrimaryTextColor: rgb(255, 255, 255);
+
+$BoxShadow: 2px 3px 8px rgba(0, 0, 0, 0.496);
+
+$marginOneRem: 1rem;
+
+@mixin flexColumn($direction) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $direction;
+    align-items: center;
+}
+@mixin flexRow($direction) {
+    display: flex;
+    justify-content: $direction;
+    align-items: center;
+}

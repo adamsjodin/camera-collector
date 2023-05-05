@@ -1,0 +1,37 @@
+@import "../variables";
+
+
+.startPage {
+    @include flexColumn(center);
+
+    a:link {
+        color: black;
+        margin: 0;
+        text-decoration: none;
+
+    }
+    a:visited {
+        color: black;
+        margin: 0;
+        text-decoration: none;
+    }
+    &__form {
+        @include flexColumn(center);
+        margin:  $marginOneRem 0;
+    }
+    &__input {
+        width: 100%;
+        padding: 0.2rem;
+        margin: 0 $marginOneRem;
+        font-size: 1rem;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__img{
+        height: 100%;
+    }
+    &__noCamera {
+        @include flexColumn(center)
+    }
+}
